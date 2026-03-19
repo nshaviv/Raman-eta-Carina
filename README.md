@@ -11,7 +11,7 @@ The repository implements the analytic Raman-scattering model used to study broa
 - `data/`: cross-section tables and the processed observational spectra used in the fits.
 - `figures/`: output figures produced by the scripts, including model grids and spectral-fit plots.
 - `Velocity_distribution/`: auxiliary calculations for angular/velocity-distribution effects.
-- `Mathematica/`: derivations and symbolic work notebooks. These are marked as documentation in `.gitattributes` so they do not dominate GitHub language statistics.
+- `Mathematica/`: analytic derivation of the passthrough and reflected Raman fluxes, generating forms that can later be used in the julia code.
 
 ## Requirements
 
@@ -86,6 +86,5 @@ julia velocity_epsilon.jl
 
 ## Notes
 
-- The scripts are currently organized as research code rather than as a packaged Julia project.
+- The scripts are organized as research code rather than as a packaged Julia project.
 - The main workflow expects to be run from the repository root so that relative paths to `data/` and `figures/` resolve correctly.
-- The `old/` directory is intentionally excluded from version control.
